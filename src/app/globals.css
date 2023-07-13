@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* BREADCUMBS */
+
+.breadcumbs {
+  @apply flex container mx-auto;
+}
+
+.breadcumb-items {
+  @apply flex items-center;
+}
+
+.breadcumb-items {
+  @apply text-light-grey font-semibold text-sm py-4;
+}
+
+.breadcumb-items:not(:last-child) .breadcumb-label{
+  @apply text-primary-red;
+}
+
+.breadcumb-items:last-child .breadcumb-label {
+  @apply text-grey;
+}
+
+.custom-carousel {
+  @apply h-auto;
+}
+
+/* BUTTON */
+
+.custom-btn {
+  @apply flex justify-center py-3 px-6 rounded-md font-semibold;
+}
+
+.btn-small {
+  @apply px-4 py-2;
+}
